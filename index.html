@@ -26,6 +26,12 @@
   <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 <body>
+  <div class="banner">
+    <div class="bannercontrast d-flex flex-column justify-content-center align-items-center">
+      <h2>Ariel Molina</h2>
+      <p>Yo soy ...</p>
+    </div>
+  </div>
   <nav class="navbar navbar-expand-md navbar-dark bg-dark">
     <a class="navbar-brand" href="#">
       <img src="favicon.ico" width="30" height="30" class="d-inline-block align-top" alt="">
@@ -36,9 +42,9 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
+      <ul class="navbar-nav m-auto text-center">
         <li class="nav-item">
-        <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" href="#">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Link</a>
@@ -49,27 +55,23 @@
       </ul>
     </div>
   </nav>
-  <div id="main-container" class="container-fluid">
-    <div class="banner">
-      <h2>Titulo 1</h2>
+
+  <div class="container">
+    <div class="row">
+      <div class="col header">header</div>
     </div>
-    <div class="container">
-      <div class="row">
-        <div class="col header">header</div>
-      </div>
-      <div class="row">
-        <div class="col sidebar">sidebar</div>
-        <div class="col content">contenido</div>
-      </div>
+    <div class="row">
+      <div class="col sidebar">sidebar</div>
+      <div class="col content">contenido</div>
     </div>
-    <footer>
-      <div class="container-fluid">
-        <div class="container">
-          holis
-        </div>
-      </div>
-    </footer>
   </div>
+  <footer>
+    <div class="container-fluid">
+      <div class="container">
+        holis
+      </div>
+    </div>
+  </footer>
 
 
   <!-- Scripts -->

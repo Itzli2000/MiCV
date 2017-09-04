@@ -1,19 +1,11 @@
-.bg-inverse {
-  background-color: #000;
-  color: #FFF;
+.banner {
+  height: 100vh;
+  background-image: url(../images/2.jpg);
+  background-size: cover;
+  background-position: center center;
 }
-.bg-inverse > * {
-  color: #FFF;
-}
-.bg-inverse button {
-  color: #FFF;
-}
-.bg-inverse a {
-  color: #FFF;
-}
-.navbar-toggler:hover {
-  cursor: pointer;
-}
-.navbar-toggler:hover {
-  color: #FFF;
+.bannercontrast {
+  height: inherit;
+  width: 100%;
+  background-color: rgba(255,255,255,0.4);
 }
