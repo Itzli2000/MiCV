@@ -1,0 +1,19 @@
+.bg-inverse {
+  background-color: #000;
+  color: #FFF;
+}
+.bg-inverse > * {
+  color: #FFF;
+}
+.bg-inverse button {
+  color: #FFF;
+}
+.bg-inverse a {
+  color: #FFF;
+}
+.navbar-toggler:hover {
+  cursor: pointer;
+}
+.navbar-toggler:hover {
+  color: #FFF;
+}
