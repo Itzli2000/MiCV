@@ -44,7 +44,7 @@ $(document).ready(function() {
         event.preventDefault();
         $('html, body').animate({
           scrollTop: target.offset().top
-        }, 1000, function() {
+        }, 1500, function() {
           // Callback after animation
           // Must change focus!
           var $target = $(target);
@@ -58,6 +58,11 @@ $(document).ready(function() {
         });
       }
     }
+  });
+
+  // Automatic close the navigation bar
+  $('.navbar-collapse a').click(function(){
+    $(".navbar-collapse").collapse('hide');
   });
 
 
