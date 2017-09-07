@@ -45,9 +45,11 @@ a {
   background-size: cover;
   color: #FFF;
 }
-#first,
-#second {
-  min-height: 900px;
+/*Special styles for cards*/
+.card {
+  min-width: 250px;
+  max-width: 400px;
+  margin-top: 15px;
 }
 
 
