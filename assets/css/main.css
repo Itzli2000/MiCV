@@ -1,3 +1,12 @@
+body {
+  font-family: 'Inder', sans-serif;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Signika', sans-serif;
+}
+a {
+  font-family: 'Fenix', serif;
+}
 .banner {
   height: 100vh;
   background-image: url(../images/1.jpg);
@@ -31,4 +40,65 @@
 #first,
 #second {
   min-height: 900px;
+}
+/*Yin yang styles*/.yin-yang {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 96px;
+  height: 48px;
+  position: relative;
+  border: 2px solid #1abc9c;
+  border-bottom-width: 50px;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  font: normal 100%/normal Arial, Helvetica, sans-serif;
+  color: rgba(0,0,0,1);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: rgba(255,255,255,1);
+  -webkit-transform: rotateZ(-45deg)   ;
+  transform: rotateZ(-45deg)   ;
+}
+
+.yin-yang::before {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  border: 18px solid #1abc9c;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  font: normal 100%/normal Arial, Helvetica, sans-serif;
+  color: rgba(0,0,0,1);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: rgba(255,255,255,1);
+  text-shadow: none;
+}
+
+.yin-yang::after {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  border: 18px solid rgba(255,255,255,1);
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  font: normal 100%/normal Arial, Helvetica, sans-serif;
+  color: rgba(0,0,0,1);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: #1abc9c;
+  text-shadow: none;
 }
