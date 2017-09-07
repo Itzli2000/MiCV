@@ -1,5 +1,6 @@
 body {
   font-family: 'Inder', sans-serif;
+  background-color: #95B2EB;
 }
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   font-family: 'Signika', sans-serif;
@@ -39,11 +40,44 @@ a {
 }
 .header {
   height: 150px;
-  background-image: url(../images/banbck.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
   color: #FFF;
+}
+/*Ribbon styles*/
+.ribbon {
+  background: #3c485f;
+  height: 55px;
+  width: 150px;
+  display: inline-block;
+  padding: 0;
+  margin: auto 0;
+  position: relative;
+  color: #fff;
+  line-height: 55px;
+  font-size: 25px;
+  text-align: center;
+}
+.ribbon:before{
+  content: '';
+  border: 27.5px solid #3c485f;
+  border-left-color: transparent;
+  border-left-width: 12px;
+  position: absolute;
+  top: 0;
+  left: -37px;
+}
+.ribbon:after {
+  content: '';
+  border: 27.5px solid #3c485f;
+  border-right-color: transparent;
+  border-right-width: 12px;
+  position: absolute;
+  top: 0;
+  right: -37px;
+}
+/*Particles styles*/
+.particles-js-canvas-el {
+  position: absolute;
+  z-index: -10;
 }
 /*Special styles for cards*/
 .card {
