@@ -39,6 +39,11 @@ a {
 }
 .header {
   height: 150px;
+  background-image: url(../images/banbck.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #FFF;
 }
 #first,
 #second {
