@@ -1,6 +1,7 @@
 body {
   font-family: 'Inder', sans-serif;
   background-color: #95B2EB;
+  overflow-x: hidden;
 }
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   font-family: 'Signika', sans-serif;
@@ -12,6 +13,10 @@ a {
 .jumbotron-fluid {
   min-height: 350px;
   margin: 0;
+}
+#first {
+  padding-left: 0;
+  padding-right: 0;
 }
 /*Styles for page*/
 .banner {
@@ -94,6 +99,7 @@ a {
   min-width: 250px;
   max-width: 400px;
   margin-top: 15px;
+  overflow: hidden;
 }
 .Icard {
   min-width: 250px;
@@ -109,8 +115,20 @@ a {
   background-size: cover;
   /*width: auto;*/
 }
-
-
+/*Video icons styles*/
+.vide-container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  top: 0;
+}
+.vide-container video {
+  position: absolute;
+  width: auto;
+  height: 100%;
+}
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
