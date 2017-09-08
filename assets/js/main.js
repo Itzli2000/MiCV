@@ -10,8 +10,7 @@ $(document).ready(function() {
   vid2.load(); 
   vid3.load(); 
 
-  $('banner').bind('toucstart', function (e) {
-    e.preventDefault();
+  $('banner').scroll(function (e) {
     vid.play(); 
     vid1.play(); 
     vid2.play(); 
