@@ -77,11 +77,12 @@ $(document).ready(function() {
     });
 
     // Autoplay video icons
-    $('body').scroll(function(){
-    var vid = document.getElementById("1vid"); 
-    var vid1 = document.getElementById("2vid"); 
-    var vid2 = document.getElementById("3vid"); 
-    var vid3 = document.getElementById("4vid"); 
+    $(window).scroll(function(event){
+      var scroll = $(window).scrollTop();
+      var vid = document.getElementById("1vid"); 
+      var vid1 = document.getElementById("2vid"); 
+      var vid2 = document.getElementById("3vid"); 
+      var vid3 = document.getElementById("4vid"); 
       vid.play(); 
       vid1.play(); 
       vid2.play(); 
