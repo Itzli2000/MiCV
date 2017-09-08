@@ -14,10 +14,6 @@ a {
   min-height: 350px;
   margin: 0;
 }
-#first {
-  padding-left: 0;
-  padding-right: 0;
-}
 /*Styles for page*/
 .banner {
   height: 90vh;
@@ -143,6 +139,10 @@ a {
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
+  #first {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 /*Extra large devices (large desktops, 1200px and up)*/
