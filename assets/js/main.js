@@ -10,12 +10,12 @@ $(document).ready(function() {
   vid2.load(); 
   vid3.load(); 
 
-  $('body').on('touchstart', function () {
-
-  vid.play(); 
-  vid1.play(); 
-  vid2.play(); 
-  vid3.play(); 
+  $('body').bind('touchmove', function (e) {
+    e.preventDefault();
+    vid.play(); 
+    vid1.play(); 
+    vid2.play(); 
+    vid3.play(); 
   });
 
   // Changes classes to banner
