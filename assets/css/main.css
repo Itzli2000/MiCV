@@ -13,10 +13,6 @@ a {
   min-height: 350px;
   margin: 0;
 }
-.jumbotron .container {
-  max-width: 500px;
-  margin: auto 0;
-}
 /*Styles for page*/
 .banner {
   height: 90vh;
@@ -70,19 +66,19 @@ a {
   content: '';
   border: 27.5px solid #3c485f;
   border-left-color: transparent;
-  border-left-width: 12px;
+  border-left-width: 30px;
   position: absolute;
   top: 0;
-  left: -37px;
+  left: -55px;
 }
 .ribbon:after {
   content: '';
   border: 27.5px solid #3c485f;
   border-right-color: transparent;
-  border-right-width: 12px;
+  border-right-width: 30px;
   position: absolute;
   top: 0;
-  right: -37px;
+  right: -55px;
 }
 /*Particles styles*/
 .particles-js-canvas-el {
@@ -116,15 +112,34 @@ a {
 
 
 
-// Medium devices (tablets, 768px and up)
+/*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
+  nav#mainNav {
+    height: 10vh;
+  }
+  .jumbotron .container {
+    max-width: 500px;
+    margin: auto 0;
+  }
 }
 
-// Large devices (desktops, 992px and up)
+/*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
 }
 
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1100px) {
+  .jumbotron .container {
+    max-width: 700px;
+  }
 
+}
+
+@media (min-width: 1200px) {
+  .jumbotron .container {
+    max-width: 850px;
+  }
+  .lead {
+    padding: 0;
+  }
 }
