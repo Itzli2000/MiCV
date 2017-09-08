@@ -13,6 +13,14 @@ $(document).ready(function() {
       $('#iAm').removeClass('h3').addClass('h1');
       $('#mainAvatar').removeClass('avatar').addClass('avatarbig');
     }
+    if (screen.width>=1200) {
+      $("#solutions").show();
+      $("#playbtn").hide();
+    }
+    else {
+      $("#solutions").hide();
+      $("#playbtn").show();
+    }
   });
   if (screen.width>=320) {
     $('#myName').removeClass('display-1').addClass('h1');
@@ -23,6 +31,14 @@ $(document).ready(function() {
     $('#myName').removeClass('h1').addClass('display-1');
     $('#iAm').removeClass('h3').addClass('h1');
     $('#mainAvatar').removeClass('avatar').addClass('avatarbig');
+  }
+  if (screen.width>=1200) {
+    $("#solutions").show();
+    $("#playbtn").hide();
+  }
+  else {
+    $("#solutions").hide();
+    $("#playbtn").show();
   }
 
   // Smooth scroll for menu anchors
