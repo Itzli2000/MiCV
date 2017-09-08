@@ -76,19 +76,5 @@ $(document).ready(function() {
       console.log('callback - particles.js config loaded');
     });
 
-    // Autoplay video icons
-    var vid = document.getElementById("1vid"); 
-    var vid1 = document.getElementById("2vid"); 
-    var vid2 = document.getElementById("3vid"); 
-    var vid3 = document.getElementById("4vid");
-
-    $(window).scroll(function(){
-      console.log($('#first').offset().top < $(this).height() + $(this).scrollTop());
-      vid.play(); 
-      vid1.play(); 
-      vid2.play(); 
-      vid3.play(); 
-    });
-
 
   });
