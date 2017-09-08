@@ -5,8 +5,12 @@ $(document).ready(function() {
   var vid1 = document.getElementById("2vid"); 
   var vid2 = document.getElementById("3vid"); 
   var vid3 = document.getElementById("4vid");
+  vid.load(); 
+  vid1.load(); 
+  vid2.load(); 
+  vid3.load(); 
 
-  window.addEventListener('touchstart', function videoStart() {
+  $('body').on('click', function () {
 
   vid.play(); 
   vid1.play(); 
