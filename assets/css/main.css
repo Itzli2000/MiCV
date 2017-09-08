@@ -1,7 +1,6 @@
 body {
   font-family: 'Inder', sans-serif;
   background-color: #95B2EB;
-  overflow-x: hidden;
 }
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   font-family: 'Signika', sans-serif;
@@ -10,10 +9,6 @@ a {
   font-family: 'Fenix', serif;
 }
 /*Refactoring Bootstrap container*/
-.container-fluid,
-.jumbotron-fluid {
-  padding: 0;
-}
 .jumbotron-fluid {
   min-height: 350px;
   margin: 0;
