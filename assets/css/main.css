@@ -16,6 +16,7 @@ a {
 }
 .jumbotron-fluid {
   min-height: 350px;
+  margin: 0;
 }
 .jumbotron .container {
   max-width: 500px;
