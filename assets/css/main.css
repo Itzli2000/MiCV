@@ -115,13 +115,6 @@ a {
   height: 100%;
   width: auto;
 }
-.card {
-  background-color: #000;
-  color: "#FFF" !important;
-}
-.card > * {
-  color: #FFF;
-}
 /*Video icons styles*/
 .vide-container {
   position: relative;
@@ -145,12 +138,6 @@ a {
   .jumbotron .container {
     max-width: 500px;
     margin: auto 0;
-  }
-  .card {
-    background-color: #FFF;
-  }
-  .card > * {
-    color: #000;
   }
 }
 

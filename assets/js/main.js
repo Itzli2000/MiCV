@@ -1,4 +1,20 @@
 $(document).ready(function() {
+  $(window).on('load', function(event) {
+    event.preventDefault();
+    /* Act on the event */
+    // Autoplay video icons
+    var vid = document.getElementById("1vid"); 
+    var vid1 = document.getElementById("2vid"); 
+    var vid2 = document.getElementById("3vid"); 
+    var vid3 = document.getElementById("4vid");
+
+    vid.play(); 
+    vid1.play(); 
+    vid2.play(); 
+    vid3.play(); 
+  });
+
+  // Changes classes to banner
   $(window).resize(function(){
     if (screen.width>=320) {
       $('#myName').removeClass('display-1').addClass('h1');
@@ -75,6 +91,7 @@ $(document).ready(function() {
     particlesJS.load('portfolio', 'particlesjs.json', function() {
       console.log('callback - particles.js config loaded');
     });
+
 
 
   });
