@@ -77,7 +77,7 @@ $(document).ready(function() {
     });
 
     // Autoplay video icons
-    $('#fcard').click(function(){
+    $('#fcard').scroll(function(){
     var vid = document.getElementById("1vid"); 
     var vid1 = document.getElementById("2vid"); 
     var vid2 = document.getElementById("3vid"); 
