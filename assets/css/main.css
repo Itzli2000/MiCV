@@ -1,6 +1,7 @@
 body {
   font-family: 'Inder', sans-serif;
   background-color: #95B2EB;
+  overflow-x: hidden;
 }
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   font-family: 'Signika', sans-serif;
@@ -8,8 +9,19 @@ body {
 a {
   font-family: 'Fenix', serif;
 }
+/*Refactoring Bootstrap container*/
+.container-fluid,
+.jumbotron-fluid {
+  padding: 0;
+  min-height: 350px;
+}
+.jumbotron .container {
+  max-width: 500px;
+  margin: auto 0;
+}
+/*Styles for page*/
 .banner {
-  height: 100vh;
+  height: 90vh;
   background-image: url(../images/1.jpg);
   background-size: cover;
   background-position: center center;
@@ -84,6 +96,20 @@ a {
   min-width: 250px;
   max-width: 400px;
   margin-top: 15px;
+}
+.Icard {
+  min-width: 250px;
+  max-width: 300px;
+  margin: 10px 0;
+}
+.Icard .card-img-main {
+  height: 200px;
+  width: 100%;
+  background-image: url(../images/avatar.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*width: auto;*/
 }
 
 
