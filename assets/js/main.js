@@ -10,7 +10,7 @@ $(document).ready(function() {
   vid2.load(); 
   vid3.load(); 
 
-  $('window').scroll(function () {
+  $( window ).scroll(function() {
     vid.play(); 
     vid1.play(); 
     vid2.play(); 
