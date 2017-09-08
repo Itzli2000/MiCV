@@ -10,7 +10,7 @@ $(document).ready(function() {
   vid2.load(); 
   vid3.load(); 
 
-  $('body').on('click', function () {
+  $('body').on('touchstart', function () {
 
   vid.play(); 
   vid1.play(); 
