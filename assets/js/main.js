@@ -10,7 +10,7 @@ $(document).ready(function() {
   vid2.load(); 
   vid3.load(); 
 
-  $('body').bind('touchmove', function (e) {
+  $('banner').bind('toucstart', function (e) {
     e.preventDefault();
     vid.play(); 
     vid1.play(); 
