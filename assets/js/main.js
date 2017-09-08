@@ -1,21 +1,5 @@
 $(document).ready(function() {
-
-  // Autoplay video icons
-  var vid = document.getElementById("1vid"); 
-  var vid1 = document.getElementById("2vid"); 
-  var vid2 = document.getElementById("3vid"); 
-  var vid3 = document.getElementById("4vid");
-  vid.load(); 
-  vid1.load(); 
-  vid2.load(); 
-  vid3.load(); 
-
-  $( window ).scroll(function() {
-    vid.play(); 
-    vid1.play(); 
-    vid2.play(); 
-    vid3.play(); 
-  });
+  $("#solutions").hide();
 
   // Changes classes to banner
   $(window).resize(function(){
@@ -96,5 +80,22 @@ $(document).ready(function() {
     });
 
 
-
+  // Autoplay video icons
+  $('#playbtn').click(function () {
+    $("#solutions").show();
+    alert('si entra');
+    var vid = document.getElementById("1vid"); 
+    var vid1 = document.getElementById("2vid"); 
+    var vid2 = document.getElementById("3vid"); 
+    var vid3 = document.getElementById("4vid");
+    vid.load(); 
+    vid1.load(); 
+    vid2.load(); 
+    vid3.load(); 
+    vid.play(); 
+    vid1.play(); 
+    vid2.play(); 
+    vid3.play(); 
   });
+
+});
