@@ -51,12 +51,14 @@ a {
   color: #FFF;
   position: relative;
   overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 .header img {
   position: absolute;
   width: 100%;
   height: auto;
-  top: -50%;
+  top: -25%;
   left: 0;
   bottom: 0;
   right: 0;
@@ -151,6 +153,9 @@ a {
   .jumbotron .container {
     max-width: 500px;
     margin: auto 0;
+  }
+  .header img {
+    top: -50%;
   }
 }
 
