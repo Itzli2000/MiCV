@@ -91,6 +91,7 @@ $(document).ready(function() {
   vid.play(); 
   $('#playbtn').click(function () {
     $(this).hide('slow');
+    vid.play();
     vid1.play(); 
     vid2.play(); 
     vid3.play(); 
