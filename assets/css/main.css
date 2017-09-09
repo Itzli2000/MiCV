@@ -1,10 +1,14 @@
 body {
   font-family: 'Inder', sans-serif;
+  overflow-x: hidden;
+  background-image: linear-gradient(to right, #ec77ab 0%, #7873f5 100%);
+}
+#who,
+#portfolio {
   background-image: url(../images/bck.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  overflow-x: hidden;
 }
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   font-family: 'Signika', sans-serif;
@@ -16,6 +20,7 @@ a {
 .jumbotron-fluid {
   min-height: 350px;
   margin: 0;
+  background-color: rgba(233, 236, 239,0.8);
 }
 /*Styles for page*/
 .banner {
