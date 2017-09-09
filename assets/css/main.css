@@ -2,9 +2,6 @@ body {
   font-family: 'Inder', sans-serif;
   overflow-x: hidden;
   background-image: linear-gradient(to right, #ec77ab 0%, #7873f5 100%);
-}
-#who,
-#portfolio {
   background-image: url(../images/bck.jpg);
   background-repeat: no-repeat;
   background-size: cover;
