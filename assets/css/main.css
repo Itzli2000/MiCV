@@ -2,10 +2,6 @@ body {
   font-family: 'Inder', sans-serif;
   overflow-x: hidden;
   background-image: linear-gradient(to right, #ec77ab 0%, #7873f5 100%);
-  background-image: url(../images/bck.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
 }
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   font-family: 'Signika', sans-serif;
@@ -53,6 +49,18 @@ a {
 .header {
   height: 150px;
   color: #FFF;
+  position: relative;
+  overflow: hidden;
+}
+.header img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: -50%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -5;
 }
 /*Ribbon styles*/
 .ribbon {
@@ -89,7 +97,7 @@ a {
 /*Particles styles*/
 .particles-js-canvas-el {
   position: absolute;
-  z-index: -10;
+  z-index: -2;
   top: 0;
   bottom: 0;
   left: 0;
