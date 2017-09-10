@@ -116,7 +116,19 @@ a {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  /*width: auto;*/
+}
+.Bigcard {
+  min-width: 0;
+  max-width: 100%;
+  width: 90%;
+}
+.Bigcard .card-img-main {
+  height: 200px;
+  width: 100%;
+  background-image: url(../images/avatar.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .card-img-top {
   height: 100%;
@@ -132,7 +144,6 @@ a {
   top: 0;
 }
 .vide-container video {
-  position: absolute;
   width: auto;
   height: 100%;
 }
@@ -163,9 +174,6 @@ a {
 @media (min-width: 1100px) {
   .jumbotron .container {
     max-width: 700px;
-  }
-  #playbtn {
-    display: none;
   }
 }
 
