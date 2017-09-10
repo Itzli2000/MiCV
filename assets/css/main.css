@@ -1,7 +1,9 @@
 body {
   font-family: 'Inder', sans-serif;
   overflow-x: hidden;
-  background-image: linear-gradient(to right, #ec77ab 0%, #7873f5 100%);
+  background: #0575E6;  /* fallback for old browsers */
+  background: linear-gradient(to right, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   font-family: 'Signika', sans-serif;
@@ -53,16 +55,6 @@ a {
   overflow: hidden;
   margin: 0;
   padding: 0;
-}
-.header img {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  top: -25%;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: -5;
 }
 /*Ribbon styles*/
 .ribbon {
