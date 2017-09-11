@@ -84,17 +84,19 @@ $(document).ready(function() {
   var vid1 = document.getElementById("2vid"); 
   var vid2 = document.getElementById("3vid"); 
   var vid3 = document.getElementById("4vid");
+  var vid4 = document.getElementById("5vid");
   vid.load(); 
   vid1.load(); 
   vid2.load(); 
   vid3.load(); 
-  vid.play(); 
+  vid4.load(); 
   $('#playbtn').click(function () {
     $(this).hide('slow');
     vid.play();
     vid1.play(); 
     vid2.play(); 
     vid3.play(); 
+    vid4.play(); 
   });
 
 });

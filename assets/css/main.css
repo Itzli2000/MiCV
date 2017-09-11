@@ -11,6 +11,13 @@ body {
 a {
   font-family: 'Fenix', serif;
 }
+/*Personal background colors*/
+.bg-usergreen {
+  background-color: #83F39D!important;
+}
+.text-usergreen {
+  color: #1C7430!important;
+}
 /*Refactoring Bootstrap container*/
 .jumbotron-fluid {
   min-height: 350px;
@@ -118,9 +125,8 @@ a {
   background-size: cover;
 }
 .Bigcard {
-  min-width: 0;
-  max-width: 100%;
-  width: 90%;
+  max-width: 750px;
+  width: 100%;
 }
 .Bigcard .card-img-main {
   height: 200px;
@@ -146,6 +152,12 @@ a {
 .vide-container video {
   width: auto;
   height: 100%;
+}
+.importantvideo {
+  position: absolute;
+  top: -20%;
+  height: 150% !important;
+
 }
 
 /*Medium devices (tablets, 768px and up)*/
