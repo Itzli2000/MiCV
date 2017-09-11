@@ -12,11 +12,11 @@ a {
   font-family: 'Fenix', serif;
 }
 /*Personal background colors*/
-.bg-usergreen {
-  background-color: #83F39D!important;
+.bg-userblue {
+  background-color: #0344BA !important;
 }
-.text-usergreen {
-  color: #1C7430!important;
+.text-userblue {
+  color: #51ADFF !important;
 }
 /*Refactoring Bootstrap container*/
 .jumbotron-fluid {
