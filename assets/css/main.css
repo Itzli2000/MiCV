@@ -13,10 +13,10 @@ a {
 }
 /*Personal background colors*/
 .bg-userblue {
-  background-color: #0344BA !important;
+  background-color: #51ADFF !important;
 }
 .text-userblue {
-  color: #51ADFF !important;
+  color: #0344BA !important;
 }
 /*Refactoring Bootstrap container*/
 .jumbotron-fluid {
