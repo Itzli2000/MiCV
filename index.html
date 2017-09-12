@@ -156,10 +156,53 @@
   </div>
 </div>
 <footer>
-  <div class="container-fluid">
-    <div class="container">
-      footer
-    </div>
+  <div id="footer" class="container-fluid d-flex flex-column justify-content-around align-items-center bg-dark text-white">
+    <h2 class="text-center">¡Estemos en contacto!</h2>
+    <ul class="list-group social-list d-flex flex-row">
+      <a href="#" class="list-group-item fa fa-facebook-official"></a>
+      <a href="#" class="list-group-item fa fa-github-square"></a>
+      <a href="#" class="list-group-item fa fa-linkedin-square"></a>
+    </ul>
+    <p class="lead text-center">Llena el siguiente formulario <br>y me pondré en contacto contigo a la brevedad.</p>
+    <form class="container" id="needs-validation" novalidate>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="validationCustom01">Nombre</label>
+          <input type="text" class="form-control" id="validationCustom01" placeholder="Nombre" required>
+          <div class="invalid-feedback">
+            Porfavor ingresa ru nombre.
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="validationCustom02">Apellido</label>
+          <input type="text" class="form-control" id="validationCustom02" placeholder="Apellido">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="validationCustom03">Correo electrónico</label>
+          <input type="email" class="form-control" id="validationCustom03" placeholder="Email" required>
+          <div class="invalid-feedback">
+            Ingresa tu correo.
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="validationCustom05">Teléfono</label>
+          <input type="text" class="form-control" id="validationCustom05" placeholder="Teléfono">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 mb-6">
+          <label for="exampleFormControlTextarea1">Comentario</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required=""></textarea>
+          <div class="invalid-feedback">
+            Escribe tu comentario o duda.
+          </div>
+        </div>
+      </div>
+      <button id="form-submit" class="btn" type="submit">Submit form</button>
+    </form>
+    <p class="copy text-center">Copyright &copy; Ariel Molina Sánchez</p>
   </div>
 </footer>
 

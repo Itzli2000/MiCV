@@ -82,12 +82,27 @@ $(document).ready(function() {
   vid3.load(); 
   vid4.load(); 
   $('#playbtn').click(function () {
-    $(this).hide('slow');
     vid.play();
     vid1.play(); 
     vid2.play(); 
     vid3.play(); 
     vid4.play(); 
+    $(this).hide(700);
   });
 
 });
+
+// JS form validation
+(function() {
+  "use strict";
+  window.addEventListener("load", function() {
+    var form = document.getElementById("needs-validation");
+    form.addEventListener("submit", function(event) {
+      if (form.checkValidity() == false) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      form.classList.add("was-validated");
+    }, false);
+  }, false);
+}());
