@@ -1,8 +1,6 @@
 body {
   font-family: 'Inder', sans-serif;
   overflow-x: hidden;
-  background: #0575E6;  /* fallback for old browsers */
-  background: linear-gradient(to right, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
@@ -27,12 +25,14 @@ a {
 /*Styles for page*/
 .banner {
   height: 90vh;
+  max-height: 700px;
   background-image: url(../images/1.jpg);
   background-size: cover;
   background-position: center center;
 }
 .bannercontrast {
   height: inherit;
+  max-height: 700px;
   width: 100%;
   background-image: linear-gradient(120deg, rgba(253,251,251,0.3) 0%, rgba(235,237,238,0.6) 100%);
 }
@@ -45,8 +45,8 @@ a {
   background-position: center center;
 }
 .avatarbig {
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   border-radius: 100%;
   background-image: url(../images/avatar.jpg);
   background-size: cover;
@@ -62,6 +62,19 @@ a {
   overflow: hidden;
   margin: 0;
   padding: 0;
+}
+/*Navbar styles*/
+.navbar-brand img {
+  width: 35px;
+  height: 35px;
+}
+.navbar-brand p {
+  text-indent: 10px;
+  margin: 0;
+  padding: 0;
+}
+.nav-item .h6 {
+  margin: 0;
 }
 /*Ribbon styles*/
 .ribbon {
@@ -162,8 +175,18 @@ a {
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
-  nav#mainNav {
-    height: 10vh;
+  #mainNav {
+    height: 80px;
+  }
+  #mainNav p.h5 {
+    font-size: 1.75rem;
+  }
+  #mainNav a.h6 {
+    font-size: 1.05rem;
+  }
+  .navbar-brand img {
+    width: 45px;
+    height: 45px;
   }
   .jumbotron .container {
     max-width: 500px;
