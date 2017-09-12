@@ -69,15 +69,6 @@ $(document).ready(function() {
     $(".navbar-collapse").collapse('hide');
   });
 
-    // Particles
-    // Note: particles only work on server, not in local
-    particlesJS.load('who', 'particlesjs.json', function() {
-      console.log('callback - particles.js config loaded');
-    });
-    particlesJS.load('portfolio', 'particlesjs.json', function() {
-      console.log('callback - particles.js config loaded');
-    });
-
 
   // Autoplay video icons
   var vid = document.getElementById("1vid"); 

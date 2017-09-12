@@ -14,16 +14,10 @@ a {
 }
 /*Personal background colors*/
 .bg-userblue {
-  background-color: #51ADFF !important;
+  background-color: #1287bf !important;
 }
 .text-userblue {
   color: #0344BA !important;
-}
-/*Refactoring Bootstrap container*/
-.jumbotron-fluid {
-  min-height: 350px;
-  margin: 0;
-  background-color: rgba(233, 236, 239,0.8);
 }
 /*Styles for page*/
 .banner {
@@ -37,7 +31,7 @@ a {
   height: inherit;
   max-height: 700px;
   width: 100%;
-  background-image: linear-gradient(120deg, rgba(253,251,251,0.3) 0%, rgba(235,237,238,0.5) 100%);
+  background-image: linear-gradient(120deg, rgba(253,251,251,0.5) 0%, rgba(235,237,238,0.5) 100%);
 }
 .avatar {
   width: 150px;
@@ -57,6 +51,7 @@ a {
 }
 .typer {
   font-weight: 400;
+  font-family: 'Inconsolata', monospace;
 }
 .header {
   height: 150px;
@@ -65,6 +60,25 @@ a {
   overflow: hidden;
   margin: 0;
   padding: 0;
+}
+.separator {
+  width: 250px;
+  height: 0px;
+  border-top: solid 5px #424242;
+  margin: 10px 0;
+  text-align: center;
+  padding: 0;
+}
+.separator:after {
+  font-family: FontAwesome;
+  font-size: 1.7rem;
+  position: relative;
+  top: -1.05em;
+  display: inline-block;
+  padding: 0 .25em;
+  content: '\f21b';
+  color: #424242;
+  background-color: #FFFFFF;
 }
 /*Navbar styles*/
 .navbar-brand img {
@@ -159,7 +173,7 @@ a {
     width: 45px;
     height: 45px;
   }
-  .jumbotron .container {
+  #first .container {
     max-width: 500px;
     margin: auto 0;
   }
@@ -178,13 +192,13 @@ a {
 
 /*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1100px) {
-  .jumbotron .container {
+  #first .container {
     max-width: 700px;
   }
 }
 
 @media (min-width: 1200px) {
-  .jumbotron .container {
+  #first .container {
     max-width: 850px;
   }
   .lead {
