@@ -9,6 +9,9 @@ body {
 a {
   font-family: 'Fenix', serif;
 }
+.text-primarycolor {
+  color: #424242 !important;
+}
 /*Personal background colors*/
 .bg-userblue {
   background-color: #51ADFF !important;
@@ -34,7 +37,7 @@ a {
   height: inherit;
   max-height: 700px;
   width: 100%;
-  background-image: linear-gradient(120deg, rgba(253,251,251,0.3) 0%, rgba(235,237,238,0.6) 100%);
+  background-image: linear-gradient(120deg, rgba(253,251,251,0.3) 0%, rgba(235,237,238,0.5) 100%);
 }
 .avatar {
   width: 150px;
@@ -75,38 +78,6 @@ a {
 }
 .nav-item .h6 {
   margin: 0;
-}
-/*Ribbon styles*/
-.ribbon {
-  background: #3c485f;
-  height: 55px;
-  width: 150px;
-  display: inline-block;
-  padding: 0;
-  margin: auto 0;
-  position: relative;
-  color: #fff;
-  line-height: 55px;
-  font-size: 25px;
-  text-align: center;
-}
-.ribbon:before{
-  content: '';
-  border: 27.5px solid #3c485f;
-  border-left-color: transparent;
-  border-left-width: 30px;
-  position: absolute;
-  top: 0;
-  left: -55px;
-}
-.ribbon:after {
-  content: '';
-  border: 27.5px solid #3c485f;
-  border-right-color: transparent;
-  border-right-width: 30px;
-  position: absolute;
-  top: 0;
-  right: -55px;
 }
 /*Particles styles*/
 .particles-js-canvas-el {
@@ -218,5 +189,8 @@ a {
   }
   .lead {
     padding: 0;
+  }
+  #mainNav a.h6 {
+    font-size: 1.3rem;
   }
 }
