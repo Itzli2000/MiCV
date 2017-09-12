@@ -12,6 +12,10 @@ a {
 .text-primarycolor {
   color: #424242 !important;
 }
+/*Sections id styles*/
+#second {
+  background-color: #f3f3f3;
+}
 /*Personal background colors*/
 .bg-userblue {
   background-color: #1287bf !important;
@@ -76,9 +80,14 @@ a {
   top: -1.05em;
   display: inline-block;
   padding: 0 .25em;
-  content: '\f21b';
   color: #424242;
   background-color: #FFFFFF;
+}
+.sep-me:after {
+  content: '\f21b';
+}
+.sep-solutions:after {
+  content: '\f0b1';
 }
 /*Navbar styles*/
 .navbar-brand img {
