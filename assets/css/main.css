@@ -19,6 +19,9 @@ a {
 #third {
   background-color: #1287bf;
 }
+#fourth {
+  background-color: #de2b24;
+}
 /*Personal background colors*/
 .bg-userblue {
   background-color: #1287bf !important;
@@ -76,7 +79,8 @@ a {
   text-align: center;
   padding: 0;
 }
-.sep-work {
+.sep-work,
+.sep-portf {
   border-top: solid 5px #FFFFFF;
 }
 .separator:after {
@@ -100,6 +104,11 @@ a {
   background-color: #1287bf;
   color: #FFFFFF;
   content: '\f126';
+}
+.sep-portf:after {
+  background-color: #de2b24;
+  color: #FFFFFF;
+  content: '\f030 ';
 }
 /*Navbar styles*/
 .navbar-brand img {
