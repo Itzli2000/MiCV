@@ -64,7 +64,7 @@ a {
   font-family: 'Inconsolata', monospace;
 }
 .header {
-  height: 150px;
+  min-height: 150px;
   color: #FFF;
   position: relative;
   overflow: hidden;
@@ -227,6 +227,23 @@ a {
 .work-container.right {
   flex-direction: column-reverse !important;
   align-items: center;
+}
+/*Portfolio styles*/
+.digilink {
+  font-size: 18px;
+  line-height: 20px;
+  padding-bottom: 2px;
+  border-bottom: 1px dotted;
+}
+.digilink:active,
+.digilink:visited,
+.digilink:hover {
+  color: #FFCDCC;
+  text-decoration: none;
+}
+.digilink:hover {
+  color: #F7E9E8;
+  border-bottom: 2px solid;
 }
 /*Footer styles*/
 .social-list {
