@@ -1,20 +1,50 @@
 <?php 
 if(isset($_POST['submit'])){
-    $to = "itzli2000@msn.com";
-    $from = $_POST['email'];
-    $name = $_POST['name'];
-    $subject = "Contacto desde Digimundo.";
-    $subject2 = "Copia del mensaje enviado a Digimundo.";
-    $message = "De:" . $name . " < ". $from . " > " . "\n\n" . " Escribio lo siguiente:" . "\n\n" . $_POST['message'];
-    $message2 = "Hola " . $name . "\n\n" . "Esta es una copia de tu mensaje " . "\n\n" . $_POST['message'];
+    $encoding = "utf-8";
+// Preferences for Subject field
+    $subject_preferences = array(
+        "input-charset" => $encoding,
+        "output-charset" => $encoding,
+        "line-length" => 76,
+        "line-break-chars" => "\r\n"
 
-    $headers = "";
-    $headers2 = "";
-    mail($to,$subject,$message,$headers);
-    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
-    // echo "Mensaje enviado. Gracias " . $first_name . ", nos contactaremos a la brevedad.";
-    // You can also use header('Location: thank_you.php'); to redirect to another page.
-    // You cannot use header and echo together. It's one or the other.
-    header('Location: index.html');
-}
-?>
+// Multiple recipients
+        $to = 'itzli2000@msn.com';
+        $from_name = $_POST['name'];
+        $from_lastname = $_POST['lastname'];
+        $from_phone = $_POST['phone'];
+        $from_mail = $_POST['email'];
+        $from_message = $_POST['message'];
+
+// Subject
+        $subject = 'Birthday Reminders for August';
+
+// Message
+        $message = '
+        <html>
+        <head>
+            <title>Mensaje prueba para envio de contenido.</title>
+        </head>
+        <body>
+          <p>'. $from_message .'</p>
+          <p>'. $from_phone .'</p>
+      </body>
+      </html>
+      ';
+
+// To send HTML mail, the Content-type header must be set
+// Mail header
+      $header = "Content-type: text/html; charset=".$encoding." \r\n";
+      $header .= "From: ".$from_name.$from_lastname." <".$from_mail."> \r\n";
+      $header .= "MIME-Version: 1.0 \r\n";
+      $header .= "Content-Transfer-Encoding: 8bit \r\n";
+      $header .= "Date: ".date("r (T)")." \r\n";
+      $header .= iconv_mime_encode("Subject", $mail_subject, $subject_preferences);
+
+// Mail it
+      mail($to, $subject, $message, $header);
+
+// Redirect
+      header('Location: index.html');
+  }
+  ?>
