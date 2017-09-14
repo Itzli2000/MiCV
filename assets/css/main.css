@@ -244,9 +244,11 @@ a {
 }
 /*Validations styles*/
 .was-validated .form-control:invalid {
+  transition: all 1s ease-in-out;
   border:3px solid #dc3545;
 }
 .was-validated .form-control:valid {
+  transition: all 1s ease-in-out;
   border:3px solid #28a745;
 }
 #btn-submit {
