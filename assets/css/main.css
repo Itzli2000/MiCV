@@ -9,8 +9,17 @@ body {
 a {
   font-family: 'Fenix', serif;
 }
+.bg-red {
+  background-color: #de2b24 !important;
+}
+.text-red {
+  color: #de2b24 !important;
+}
 .text-primarycolor {
   color: #424242 !important;
+}
+.btn-red {
+  color: #de2b24 !important;
 }
 /*Sections id styles*/
 #second {
@@ -67,7 +76,6 @@ a {
   min-height: 150px;
   color: #FFF;
   position: relative;
-  overflow: hidden;
   margin: 0;
   padding: 0;
 }
@@ -230,6 +238,7 @@ a {
 }
 /*Portfolio styles*/
 .digilink {
+  color: #FFCDCC;
   font-size: 18px;
   line-height: 20px;
   padding-bottom: 2px;
@@ -244,6 +253,14 @@ a {
 .digilink:hover {
   color: #F7E9E8;
   border-bottom: 2px solid;
+}
+.project-info,
+.project-image {
+  max-height: 250px;
+}
+.project-image img {
+  height: 100%;
+  width: auto;
 }
 /*Footer styles*/
 .social-list {
@@ -371,12 +388,21 @@ a {
   }
 
 }
-
+@media (min-width: 576px){
+  /*Refactoring modal size*/
+  .modal-dialog {
+    max-width: 700px;
+  }
+}
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
   #first {
     padding-left: 0;
     padding-right: 0;
+  }
+  /*Refactoring modal lg size*/
+  .modal-lg {
+    max-width: 950px;
   }
 }
 
