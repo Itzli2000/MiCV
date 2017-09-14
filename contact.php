@@ -24,11 +24,12 @@ if(isset($_POST['submit'])){
     $message = '
     <html>
     <head>
-      <title>Mensaje prueba para envio de contenido.</title>
+      <title>Mensaje.</title>
   </head>
   <body>
-      <p> Teléfono:'. $from_phone .' <br></p>
-      <p>'. $from_message .'</p>
+      <h2>Mensaje enviado desde página personal.</h2>
+      <h4>'.$from_name.' '.$from_lastname.' <br>Correo: '.$from_mail.' <br>Teléfono: '. $from_phone .' <br>Escribió lo siguiente:</h4>
+      <p> Mensaje: '. $from_message .'</p>
   </body>
   </html>
   ';
