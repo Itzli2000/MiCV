@@ -1,5 +1,17 @@
 $(document).ready(function() {
 
+  // Detect browser
+  function navegador(){
+    var agente = window.navigator.userAgent;
+    var navegadores = ["Chrome", "Firefox", "Safari", "Opera", "Trident", "MSIE", "Edge"];
+    for(var i in navegadores){
+      if(agente.indexOf( navegadores[i]) != -1 ){
+        return navegadores[i];
+      }
+    }
+  }
+  alert(window.navigator.appCodeName);
+
   // Changes classes to banner
   $(window).resize(function(){
     if (screen.width>=320) {
