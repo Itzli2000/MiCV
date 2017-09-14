@@ -295,43 +295,43 @@
       <a href="https://www.linkedin.com/in/ariel-itzli-molina-sánchez-0b4a09129/" target="_blank" class="list-group-item fa fa-linkedin-square"></a>
     </ul>
     <p class="lead text-center">Llena el siguiente formulario <br>y me pondré en contacto contigo a la brevedad.</p>
-    <form class="container" id="needs-validation" novalidate>
+    <form method="post" action="contact.php" class="container" id="needs-validation" novalidate>
       <div class="row">
         <div class="col-md-6 mb-3">
-          <label for="validationCustom01">Nombre</label>
-          <input type="text" class="form-control" id="validationCustom01" placeholder="Nombre" required>
+          <label for="name">Nombre</label>
+          <input type="text" class="form-control" name="name" id="name" placeholder="Nombre" required>
           <div class="invalid-feedback">
             Porfavor ingresa ru nombre.
           </div>
         </div>
         <div class="col-md-6 mb-3">
-          <label for="validationCustom02">Apellido</label>
-          <input type="text" class="form-control" id="validationCustom02" placeholder="Apellido">
+          <label for="lastname">Apellido</label>
+          <input type="text" class="form-control" name="lastname" id="lastname" placeholder="Apellido">
         </div>
       </div>
       <div class="row">
         <div class="col-md-6 mb-3">
-          <label for="validationCustom03">Correo electrónico</label>
-          <input type="email" class="form-control" id="validationCustom03" placeholder="Email" required>
+          <label for="email">Correo electrónico</label>
+          <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
           <div class="invalid-feedback">
             Ingresa tu correo.
           </div>
         </div>
         <div class="col-md-6 mb-3">
-          <label for="validationCustom05">Teléfono</label>
-          <input type="text" class="form-control" id="validationCustom05" placeholder="Teléfono">
+          <label for="phone">Teléfono</label>
+          <input type="text" class="form-control" name="phone" id="phone" placeholder="Teléfono">
         </div>
       </div>
       <div class="row">
         <div class="col-md-12 mb-6">
-          <label for="exampleFormControlTextarea1">Comentario</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required=""></textarea>
+          <label for="message">Comentario</label>
+          <textarea class="form-control" name="message" id="message" rows="3" required=""></textarea>
           <div class="invalid-feedback">
             Escribe tu comentario o duda.
           </div>
         </div>
       </div>
-      <button id="form-submit" class="btn" type="submit">Enviar</button>
+      <li id="btn-submit"><input id="form-submit" type="submit" name="submit" value="Enviar" class="btn" /></li>
     </form>
     <p class="copy text-center">Copyright &copy; Ariel Molina Sánchez</p>
   </div>

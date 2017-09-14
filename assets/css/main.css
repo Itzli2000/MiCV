@@ -249,10 +249,14 @@ a {
 .was-validated .form-control:valid {
   border:3px solid #28a745;
 }
+#btn-submit {
+  list-style: none;
+}
 #form-submit {
   margin-top: 20px;
   background-color: #de2b24;
   color: #FFFFFF;
+  cursor: pointer;
 }
 
 
