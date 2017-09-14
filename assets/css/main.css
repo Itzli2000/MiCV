@@ -80,7 +80,8 @@ a {
   padding: 0;
 }
 .sep-work,
-.sep-portf {
+.sep-portf,
+.sep-contact {
   border-top: solid 5px #FFFFFF;
 }
 .separator:after {
@@ -109,6 +110,11 @@ a {
   background-color: #de2b24;
   color: #FFFFFF;
   content: '\f030 ';
+}
+.sep-contact:after {
+  background-color: #343a40;
+  color: #FFFFFF;
+  content: '\f0e0  ';
 }
 /*Navbar styles*/
 .navbar-brand img {
@@ -223,10 +229,6 @@ a {
   align-items: center;
 }
 /*Footer styles*/
-#footer h2 {
-  margin-top: 50px;
-  margin-bottom: 30px;
-}
 .social-list {
   margin-bottom: 20px;
 }
