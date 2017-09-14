@@ -17,19 +17,19 @@ if(isset($_POST['submit'])){
         $from_message = $_POST['message'];
 
 // Subject
-        $subject = 'Birthday Reminders for August';
+        $subject = 'Contacto desde mi página';
 
 // Message
         $message = '
         <html>
         <head>
-            <title>Mensaje prueba para envio de contenido.</title>
-        </head>
-        <body>
-          <p>'. $from_message .'</p>
-          <p>'. $from_phone .'</p>
-      </body>
-      </html>
+              <title>Mensaje prueba para envio de contenido.</title>
+          </head>
+          <body>
+              <p> Teléfono:'. $from_phone .' <br></p>
+              <p>'. $from_message .'</p>
+          </body>
+          </html>
       ';
 
 // To send HTML mail, the Content-type header must be set
