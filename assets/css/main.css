@@ -175,14 +175,6 @@ a:hover {
   width: auto;
   height: 100%;
 }
-.importantvideo {
-  position: absolute;
-  top: -20%;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 150% !important;
-}
 /*Work flow containers styles*/
 .work-container {
   flex-wrap: wrap;
