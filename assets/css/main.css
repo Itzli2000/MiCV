@@ -264,6 +264,7 @@ a:hover {
 }
 .project-image {
   overflow: hidden;
+  justify-content: space-around;
 }
 .project-image img {
   height: auto;
@@ -412,6 +413,7 @@ a:hover {
   }
   .project-image {
     overflow: hidden;
+    justify-content: center;
   }
   .project-image img {
     height: 100%;
