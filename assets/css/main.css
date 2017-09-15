@@ -308,6 +308,10 @@ a:hover {
   color: #FFFFFF;
   cursor: pointer;
 }
+.copy {
+  margin: 0;
+  padding: 0;
+}
 
 
 
