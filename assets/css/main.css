@@ -410,6 +410,9 @@ a:hover {
   .project-image {
     min-width: 0px;
   }
+  .project-image {
+    overflow: hidden;
+  }
   .project-image img {
     height: 100%;
     width: auto;
