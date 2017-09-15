@@ -200,7 +200,7 @@ a:hover {
   overflow: hidden;
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 .work-image img {
