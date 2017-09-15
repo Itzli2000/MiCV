@@ -124,6 +124,9 @@ a:hover {
 .nav-item .h6 {
   margin: 0;
 }
+.navbar-dark .navbar-nav .nav-link {
+  color: #FFFFFF;
+}
 /*Special styles for cards*/
 .card {
   min-width: 250px;
@@ -263,8 +266,8 @@ a:hover {
   overflow: hidden;
 }
 .project-image img {
-  height: 100%;
-  width: auto;
+  height: auto;
+  width: 90%;
 }
 .project-container button {
   border: 1px solid #FFFFFF;
@@ -406,6 +409,10 @@ a:hover {
   .project-info,
   .project-image {
     min-width: 0px;
+  }
+  .project-image img {
+    height: 100%;
+    width: auto;
   }
 
 }
