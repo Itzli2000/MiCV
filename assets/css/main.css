@@ -169,8 +169,7 @@ a:hover {
   width: 100%;
   height: 200px;
   display: flex;
-  justify-content: center;
-  top: 0;
+  justify-content: space-around;
 }
 .vide-container video {
   width: auto;
