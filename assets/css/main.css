@@ -19,6 +19,7 @@ a {
   color: #424242 !important;
 }
 .btn-red {
+  cursor: pointer;
   color: #de2b24 !important;
 }
 /*Sections id styles*/
@@ -254,9 +255,15 @@ a {
   color: #F7E9E8;
   border-bottom: 2px solid;
 }
+.project-container{
+  min-height: 250px;
+}
 .project-info,
 .project-image {
-  max-height: 250px;
+  min-width: 300px;
+}
+.project-image {
+  overflow: hidden;
 }
 .project-image img {
   height: 100%;
@@ -385,6 +392,10 @@ a {
     top: 25%;
     bottom: 0;
     right: 0;
+  }
+  .project-info,
+  .project-image {
+    min-width: 0px;
   }
 
 }
