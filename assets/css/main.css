@@ -1,3 +1,13 @@
+/*Color palette*/
+.dark-primary-color    { background: #303F9F; }
+.default-primary-color { background: #3F51B5; }
+.light-primary-color   { background: #C5CAE9; }
+.text-primary-color    { color: #FFFFFF; }
+.accent-color          { background: #FF5252; }
+.primary-text-color    { color: #212121; }
+.secondary-text-color  { color: #757575; }
+.divider-color         { border-color: #BDBDBD; }
+/*General styles*/
 body {
   font-family: 'Inder', sans-serif;
   overflow-x: hidden;
@@ -9,35 +19,12 @@ body {
 a {
   font-family: 'Fenix', serif;
 }
-.bg-red {
-  background-color: #de2b24 !important;
+a:focus,
+a:visited {
+  color: #FFFFFF;
 }
-.text-red {
-  color: #de2b24 !important;
-}
-.text-primarycolor {
-  color: #424242 !important;
-}
-.btn-red {
-  cursor: pointer;
-  color: #de2b24 !important;
-}
-/*Sections id styles*/
-#second {
-  background-color: #f3f3f3;
-}
-#third {
-  background-color: #1287bf;
-}
-#fourth {
-  background-color: #de2b24;
-}
-/*Personal background colors*/
-.bg-userblue {
-  background-color: #1287bf !important;
-}
-.text-userblue {
-  color: #0344BA !important;
+a:hover {
+  color: #C5CAE9;
 }
 /*Styles for page*/
 .banner {
@@ -75,7 +62,6 @@ a {
 }
 .header {
   min-height: 150px;
-  color: #FFF;
   position: relative;
   margin: 0;
   padding: 0;
@@ -83,12 +69,12 @@ a {
 .separator {
   width: 250px;
   height: 0px;
-  border-top: solid 5px #424242;
+  border-top: solid 5px #212121;
   margin: 10px 0;
   text-align: center;
   padding: 0;
 }
-.sep-work,
+.sep-solutions,
 .sep-portf,
 .sep-contact {
   border-top: solid 5px #FFFFFF;
@@ -100,23 +86,23 @@ a {
   top: -1.05em;
   display: inline-block;
   padding: 0 .3em;
-  color: #424242;
+  color: #212121;
 }
 .sep-me:after {
   background-color: #FFFFFF;
   content: '\f21b';
 }
 .sep-solutions:after {
-  background-color: #f3f3f3;
+  background-color: #3F51B5;
+  color: #FFFFFF;
   content: '\f0b1';
 }
 .sep-work:after {
-  background-color: #1287bf;
-  color: #FFFFFF;
+  background-color: #C5CAE9;
   content: '\f126';
 }
 .sep-portf:after {
-  background-color: #de2b24;
+  background-color: #3F51B5;
   color: #FFFFFF;
   content: '\f030 ';
 }
@@ -195,7 +181,7 @@ a {
 /*Work flow containers styles*/
 .work-container {
   flex-wrap: wrap;
-  box-shadow: 1.5px 1.5px 10px #FFFFFF;
+  box-shadow: 1.5px 1.5px 10px #212121;
   border-radius: 5px;
   justify-content: center;
   margin-bottom: 30px;
@@ -220,7 +206,6 @@ a {
 }
 .step {
   height: 90px;
-  background-color: #de2b24;
   border: 2px solid #FFF;
   border-radius: 5px;
 }
@@ -239,7 +224,6 @@ a {
 }
 /*Portfolio styles*/
 .digilink {
-  color: #FFCDCC;
   font-size: 18px;
   line-height: 20px;
   padding-bottom: 2px;
@@ -248,15 +232,28 @@ a {
 .digilink:active,
 .digilink:visited,
 .digilink:hover {
-  color: #FFCDCC;
   text-decoration: none;
 }
 .digilink:hover {
-  color: #F7E9E8;
+  color: #FF5252;
   border-bottom: 2px solid;
+}
+.main-project {
+  border: 1px solid;
+  background-color: #C5CAE9;
+  color: #000000;
+}
+.main-project h2 {
+  padding: 0;
+  margin: 0;
+}
+.project-enterprise {
+  margin-top: 1rem;
+  margin-bottom: .5rem;
 }
 .project-container{
   min-height: 250px;
+  margin-bottom: 1rem;
 }
 .project-info,
 .project-image {
@@ -268,6 +265,14 @@ a {
 .project-image img {
   height: 100%;
   width: auto;
+}
+.project-container button {
+  border: 1px solid #FFFFFF;
+  cursor: pointer;
+}
+.project-container button:hover {
+  background-color: #3F51B5;
+  transition: all .7 ease-in-out;
 }
 /*Footer styles*/
 .social-list {
@@ -315,6 +320,9 @@ a {
   #mainNav p.h5 {
     font-size: 1.75rem;
   }
+  #mainNav p.h5:hover {
+    color: #C5CAE9;
+  }
   #mainNav a.h6 {
     font-size: 1.05rem;
   }
@@ -350,7 +358,6 @@ a {
   .step {
     height: 90px;
     position: absolute;
-    background-color: #de2b24;
     border: 2px solid #FFF;
     border-radius: 5px;
     width: 90px;
@@ -384,7 +391,6 @@ a {
   .work-container.right .step {
     height: 90px;
     position: absolute;
-    background-color: #de2b24;
     border: 2px solid #FFF;
     border-radius: 5px;
     width: 90px;
@@ -416,6 +422,14 @@ a {
     max-width: 950px;
   }
 }
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1025px) {
+  #playbtn {
+    display: none;
+  }
+}
+
 
 /*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1100px) {
