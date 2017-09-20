@@ -179,9 +179,13 @@ button:hover {
   display: flex;
   justify-content: space-around;
 }
-.vide-container video {
+.vide-container img {
   width: auto;
-  height: 100%;
+  height: 90%;
+  margin: auto;
+}
+.super {
+  margin-top: 10px;
 }
 /*Work flow containers styles*/
 .work-container {

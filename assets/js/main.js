@@ -69,28 +69,10 @@ $(document).ready(function() {
     $(".navbar-collapse").collapse('hide');
   });
 
-
-  // Autoplay video icons
-  var vid = document.getElementById("1vid"); 
-  var vid1 = document.getElementById("2vid"); 
-  var vid2 = document.getElementById("3vid"); 
-  var vid3 = document.getElementById("4vid");
-  var vid4 = document.getElementById("5vid");
-  vid.load(); 
-  vid1.load(); 
-  vid2.load(); 
-  vid3.load(); 
-  vid4.load(); 
-  $('#playbtn').click(function () {
-    vid.play();
-    vid1.play(); 
-    vid2.play(); 
-    vid3.play(); 
-    vid4.play(); 
-    $(this).hide(700);
-  });
-
 });
+
+
+
 
 // JS form validation
 (function() {
