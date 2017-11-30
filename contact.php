@@ -47,6 +47,6 @@ if(isset($_POST['submit'])){
   mail($to, $subject, $message, $header);
 
 // Redirect
-  header('Location: index.html');
+  header('Location: ready.html');
 }
 ?>

@@ -27,36 +27,41 @@ $(document).ready(function() {
   // Smooth scroll for menu anchors
   // Select all links with hashes
   $('a[href*="#"]')
-    // Remove links that don't actually link to anything
-    .not('[href="#"]')
-    .not('[href="#0"]')
-    .click(function(event) {
-      // On-page links
-      if (
-        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-        && 
-        location.hostname == this.hostname
-        ) {
-        // Figure out element to scroll to
-      var target = $(this.hash);
-      var navHeight = $('#mainNav').height();
-      var scrollToPosition = target.offset().top - (navHeight);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-        // Does a scroll target exist?
-        if (target.length) {
-          // Only prevent default if animation is actually gonna happen
-          event.preventDefault();
-          $('html, body').animate({
-            scrollTop: scrollToPosition
-          }, 1500, function() {
-            // Callback after animation
-            // Must change focus!
-            var $target = $(target);
-            $target.focus();
-          });
-        }
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+      ) {
+      // Figure out element to scroll to
+    var target = $(this.hash);
+    var scrollToPosition = target.offset().top;
+    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: scrollToPosition
+        }, 1500, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
       }
-    });
+    }
+  });
 
   // Automatic close the navigation bar
   $('.navbar-collapse a').click(function(){
@@ -65,31 +70,20 @@ $(document).ready(function() {
 
 });
 
-// Form validation
-$("#needs-validation").validate({
-  errorClass: "form-control-invalid",
-  rules: {
-    name: "required",
-    email: "required",
-    message: "required",
-  },
-  messages: {
-    name: "Escribe tu nombre",
-    email: "Ingresa tu correo",
-    message: "Escribe tu comentario",
-  },
-  submitHandler: function (form) {
-    swal({
-      title: "¡Tu mensaje sera enviado!",
-      text: "Pronto me pondré en contacto.",
-      type: "success",
-      showCancelButton: true,
-      cancelButtonText: "Cancelar",
-      cancelButtonClass: 'btn btn-danger',
-      confirmButtonText: "Entendido",
-      confirmButtonClass: 'btn btn-success'
-    }).then(function () {
-       form.submit();
-    });
-  }
-});
+
+
+
+// JS form validation
+(function() {
+  "use strict";
+  window.addEventListener("load", function() {
+    var form = document.getElementById("needs-validation");
+    form.addEventListener("submit", function(event) {
+      if (form.checkValidity() == false) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      form.classList.add("was-validated");
+    }, false);
+  }, false);
+}());

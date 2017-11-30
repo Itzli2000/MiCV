@@ -333,12 +333,11 @@ button.close {
   border-color: #de2b24;
 }
 /*Validations styles*/
-.form-control-invalid {
+.was-validated .form-control:invalid {
   transition: all 0.3s ease-in-out;
   border:3px solid #dc3545;
-  padding: 5px;
 }
-.form-control-valid {
+.was-validated .form-control:valid {
   transition: all 0.3s ease-in-out;
   border:3px solid #28a745;
 }
