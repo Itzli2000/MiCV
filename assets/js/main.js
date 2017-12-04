@@ -2,7 +2,7 @@ $(document).ready(function() {
 
   // Active class for menu
   (function($) {
-    $("#mainNav li a").on("click", function(e) {
+    $("#mainNav a").on("click", function(e) {
         e.preventDefault();
         $("#mainNav li a").removeClass("active");
         $(this).addClass("active");

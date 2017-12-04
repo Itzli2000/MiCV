@@ -34,6 +34,9 @@ button:hover {
   cursor: pointer;
 }
 /*Styles for page*/
+.pageSecctions {
+  min-height: 90vh;
+}
 .banner {
   height: 90vh;
   max-height: 700px;
@@ -50,6 +53,7 @@ button:hover {
 #myName {
   border-top: 2px solid #FFF;
   border-bottom: 2px solid #FFF;
+  padding: 5px;
 }
 #avatar404 {
   width: 250px;
@@ -142,7 +146,7 @@ button:hover {
   color: #FFFFFF;
 }
 #mainNav .navBlock a.active {
-  color: #2a8152;
+  color: #37dc7d;
 }
 /*Special styles for cards*/
 .card {
