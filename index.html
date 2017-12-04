@@ -18,7 +18,7 @@
   <!-- Settings -->
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <meta name="description" content="Desarrollador Front-End, con conocimientos firmes y sólidos en Wordpress, html5, css3, javascript, jquery" />
-  <meta name="keywords" content="Wordpress, html5, css3, javascript, jquery, asesoria digital, web development, ios android" />
+  <meta name="keywords" content="Wordpress, Django, html5, css3, javascript, jquery, asesoria digital, web development, ios android" />
   <meta name="author" content="Ariel Molina" />
   <!-- Stylesheets -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
@@ -28,20 +28,31 @@
   <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 <body>
-
-  <nav id="mainNav" class="navbar sticky-top navbar-expand-md navbar-dark dark-primary-color text-primary-color">  <!-- Navigation menu -->
+  <div id="banner" class="banner text-white">
+    <div class="bannercontrast text-center d-flex flex-column justify-content-center align-items-center">
+      <h2 id="myName" class="display-4 mb-3">&nbsp; Ariel Molina &nbsp;</h2>
+      <p id="iAm" class="h1">Soy 
+        <span class="typer" id="main" data-words="polifacético,desarrollador,comprometido,mexicano,divertido" data-colors="#37dc7d" data-delay="100" data-deleteDelay="1000"></span>
+        <span class="cursor" data-owner="main"></span>
+      </p>
+    </div>
+  </div>
+  <nav id="mainNav" class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
     <a class="navbar-brand d-flex justify-content-center align-items-center" href="#banner">
       <img src="favicon.ico" class="d-inline-block align-top" alt="">
-      <p class="h5 text-primary-color">Ariel Molina</p>
+      <p class="h5 text-white">Ariel Molina</p>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse navBlock" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item text-center">
           <a class="nav-link h6" href="#first">¿Quien soy?</a>
+        </li>
+        <li class="nav-item text-center">
+          <a class="nav-link h6" href="#skills">Habilidades</a>
         </li>
         <li class="nav-item text-center">
           <a class="nav-link h6" href="#second">Soluciones</a>
@@ -57,45 +68,91 @@
         </li>
       </ul>
     </div>
-  </nav> <!-- /Navigation Menu -->
+  </nav>
+</div>
 
-  <div id="banner" class="banner"> <!-- Main banner -->
-    <div class="bannercontrast text-center d-flex flex-column justify-content-around align-items-center">
-      <div id="mainAvatar" class="avatar"></div>
-      <h2 id="myName" class="display-1">Ariel Molina</h2>
-      <p id="iAm" class="h1">Soy 
-        <span class="typer" id="main" data-words="polifacético,desarrollador,comprometido,mexicano,divertido" data-colors="#3F51B5" data-delay="100" data-deleteDelay="1000"></span>
-        <span class="cursor" data-owner="main"></span>
-      </p>
-    </div>
-  </div>  <!-- /Main banner -->
-</div>  
-<div id="first" class="container-fluid mb-5">  <!-- First section -->
-  <div class="row ">
-    <div class="col header h1 d-flex flex-column justify-content-center align-items-center">
-      <p class="primary-text-color">¿Quien soy?
-      </p>
-      <div class="separator sep-me"></div>
+<div class="row" id="values"></div>
+
+<div class="row text-dark bg-lightgray pageSecctions" id="first">
+  <div class="col-sm-12 col-md-4">
+    <img src="assets/images/who1.jpg" class="img-fluid" alt="Ariel Molina">
+  </div>
+  <div class="col-sm-12 col-md-8 d-flex flex-column justify-content-center align-content-center">
+    <div class="customContainer ">
+      <div class="col header h1 d-flex flex-column justify-content-center align-items-center">
+        <p class="text-dark">¿Quien soy?</p>
+        <div class="separator sep-me"></div>
+      </div>
+      <p class="text-justify">Soy Programador Web. Me especializo en el desarrollo de sitios web con  HTML5, CSS3, JAVASCRIPT Y JQUERY.<br><br>Me he dedicado a perfeccionar el proceso de maquetación web con estándares W3C, y compatibilidad multi-browser así como diseños responsivos, buscando la minimización del código utilizado.<br><br>Me apasiona la perfección visual de los sitios web con los que trabajo</p>
     </div>
   </div>
-  <div class="container-fluid d-flex justify-content-around align-items-center flex-wrap">
-    <div class="card Icard text-white default-primary-color">
-      <div class="card-img-main"> </div>
-      <div class="card-body text-center">
-        <h4 class="card-title">Ariel Molina</h4>
-        <p class="card-text">Programador y Consultor en Desarrollo Web <br>Entusiasta y autodidácta.</p>
+</div>
+<div class="row pageSecctions px-4" id="skills">
+  <div class="col-sm-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
+    <div class="container">
+      <div class="col header h1 d-flex flex-column justify-content-center align-items-center mb-4">
+        <p class="text-dark">Mis habilidades</p>
+        <div class="separator sep-hab"></div>
+      </div>
+      <p>Tengo la capacidad para aprender rápido nuevos procesos y poner en marcha lo adquirido, me gusta la innovación.<br> <br>Soy una persona altamente responsable con lo que se me delega, entrego resultados de acuerdo a lo requerido, me adapto facilmente a los cambios y necesidades de mejora que se requiera respecto a mi puesto.<br><br>A continuación, listo algunos de mis fuertes en desarrollo front-end.</p>
+    </div>
+  </div>
+  <div class="col-sm-12 col-md-6 d-flex flex-column justify-content-center align-content-center">
+    <div class="barContainer mt-4">
+      <h4>HTML5</h4>
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" style="width: 85%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+        </div>
       </div>
     </div>
-    <div class="container">
-      <p class="lead text-justify">Soy Programador Web. Me especializo en el desarrollo de sitios web con  HTML5, CSS3, JAVASCRIPT Y JQUERY.<br><br>Me he dedicado a perfeccionar el proceso de maquetación web con estándares W3C, y compatibilidad multi-browser así como diseños responsivos, buscando la minimización del código utilizado.<br><br>Me apasiona la perfección visual de los sitios web con los que trabajo</p>
+    <div class="barContainer mt-4">
+      <h4>CSS3</h4>
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+        </div>
+      </div>
+    </div>
+    <div class="barContainer mt-4">
+      <h4>JAVASCRIPT / JQUERY</h4>
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+        </div>
+      </div>
+    </div>
+    <div class="barContainer mt-4">
+      <h4>SASS</h4>
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+        </div>
+      </div>
+    </div>
+    <div class="barContainer mt-4">
+      <h4>WORDPRESS (PHP)</h4>
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+        </div>
+      </div>
+    </div>
+    <div class="barContainer mt-4">
+      <h4>DJANGO (Python)</h4>
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+        </div>
+      </div>
     </div>
   </div>
-</div>  <!-- /First Section -->
-
-<div id="second" class="container-fluid default-primary-color">  <!-- Second Section -->
+</div>
+<div class="row bg-lightgray" id="resume">
+  <div class="col text-center">
+    <h3 class="mt-5">Currículum</h3>
+    <p class="my-5">¿Quieres conocer más sobre mi?<br>Descarga mi hoja de vida, ahí encontrarás toda la información relevante. </p>
+    <a href="CV-Ariel.pdf" target="_blank" class="mb-5 btn btn-success">Descarga Currículum</a>
+  </div>
+</div>
+<div class="container-fluid" id="second">
   <div class="row">
     <div id="portfolio" class="col header h1 d-flex flex-column justify-content-center align-items-center">
-      <p class="text-primary-color">Soluciones
+      <p class="text-dark">Soluciones
       </p>
       <div class="separator sep-solutions"></div>
     </div>
@@ -141,7 +198,7 @@
     </div>
   </div>
   <div class="container-fluid d-flex justify-content-around align-items-center flex-wrap mt-3 p-0">
-    <div class="card Bigcard light-primary-color mb-3">
+    <div class="card Bigcard bg-dark text-white mb-3">
       <div class="card-header text-center h2">Optimización y posicionamiento SEO</div>
       <div class="vide-container">
         <img class="animated infinite pulse super" src="assets/icon/seo.png" alt="solutions icons">
@@ -152,9 +209,8 @@
       </div>
     </div>
   </div>
-</div> <!-- /Second Section -->
-
-<div id="third" class="container-fluid text-white light-primary-color">  <!-- Third section -->
+</div>
+<div id="third" class="pageSecctions text-white bg-lightgray">
   <div class="row ">
     <div class="col header h1 d-flex flex-column justify-content-center align-items-center primary-text-color">
       <p>Modo de trabajo</p>
@@ -162,7 +218,6 @@
     </div>
   </div>
   <div class="container-fluid d-flex justify-content-around align-items-center flex-wrap py-3">
-    <!-- Left container -->
     <div class="container work-container left d-flex flex-row py-3">
       <div class="image-container d-flex flex-wrap">
         <div class="work-image">
@@ -178,8 +233,6 @@
         <p class="primary-text-color text-justify">Platicamos sobre tu necesidad, planteamos todos los puntos y generamos una idea general del sitio a desarrollar.</p>
       </div>
     </div>
-    <!-- /Left container -->
-    <!-- Right container -->
     <div class="container work-container right d-flex flex-row py-3">
       <div class="work-text my-auto">
         <h3 class="primary-text-color text-center">Propuesta</h3>
@@ -195,8 +248,6 @@
         </div>
       </div>
     </div>
-    <!-- Right container -->
-    <!-- Left container -->
     <div class="container work-container left d-flex flex-row py-3">
       <div class="image-container d-flex flex-wrap">
         <div class="work-image">
@@ -212,8 +263,6 @@
         <p class="primary-text-color text-justify">Cuando estés de acuerdo con la propuesta.<br>Se creá una maqueta "muestra" de como se verá tu diseño.<br>Platicamos y se aplican los cambios que se requieran.</p>
       </div>
     </div>
-    <!-- /Left container -->
-    <!-- Right container -->
     <div class="container work-container right d-flex flex-row py-3">
       <div class="work-text my-auto">
         <h3 class="primary-text-color text-center">Desarrollo</h3>
@@ -229,8 +278,6 @@
         </div>
       </div>
     </div>
-    <!-- Right container -->
-    <!-- Left container -->
     <div class="container work-container left d-flex flex-row py-3">
       <div class="image-container d-flex flex-wrap">
         <div class="work-image">
@@ -246,8 +293,6 @@
         <p class="primary-text-color text-justify">Una vez que el desarrollo este completo; se sube tu sitio web a un servidor de pruebas, en el que veremos que el diseño se vea y comporte a la perfección.<br>Si se detecta un error se corrige antes de que se libere al público.</p>
       </div>
     </div>
-    <!-- /Left container -->
-    <!-- Right container -->
     <div class="container work-container right d-flex flex-row py-3">
       <div class="work-text my-auto">
         <h3 class="primary-text-color text-center">Lanzamiento</h3>
@@ -263,11 +308,10 @@
         </div>
       </div>
     </div>
-    <!-- Right container -->
   </div>
-</div>  <!-- /Third Section -->
+</div>
 
-<div id="fourth" class="container-fluid text-white default-primary-color">  <!-- Fourth section -->
+<div id="fourth" class="container-fluid">  <!-- Fourth section -->
   <div class="row ">
     <div class="col header d-flex flex-column justify-content-center align-items-center">
       <p class="h1 mt-3 mb-4">Portafolio</p>
@@ -387,7 +431,7 @@
       <a href="https://www.linkedin.com/in/ariel-itzli-molina-sánchez-0b4a09129/" target="_blank" class="list-group-item fa fa-linkedin-square"></a>
     </ul>
     <p class="lead text-center">Llena el siguiente formulario <br>y me pondré en contacto contigo a la brevedad.</p>
-    <form method="post" action="contact.php" class="container" id="needs-validation" novalidate>
+    <form method="post" action="contact.php" class="container">
       <div class="row">
         <div class="col-md-6 mb-3">
           <label for="name">Nombre</label>
@@ -462,7 +506,7 @@
           </ul>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn dark-primary-color text-primary-color" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn btn-dark" data-dismiss="modal">Cerrar</button>
         </div>
       </div>
     </div>
@@ -502,7 +546,7 @@
           </ul>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn dark-primary-color text-primary-color" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn btn-dark" data-dismiss="modal">Cerrar</button>
         </div>
       </div>
     </div>
@@ -543,7 +587,7 @@
           </ul>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn dark-primary-color text-primary-color" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn btn-dark" data-dismiss="modal">Cerrar</button>
         </div>
       </div>
     </div>
@@ -584,7 +628,7 @@
           </ul>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn dark-primary-color text-primary-color" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn btn-dark" data-dismiss="modal">Cerrar</button>
         </div>
       </div>
     </div>
@@ -624,7 +668,7 @@
           </ul>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn dark-primary-color text-primary-color" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn btn-dark" data-dismiss="modal">Cerrar</button>
         </div>
       </div>
     </div>
