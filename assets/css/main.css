@@ -44,6 +44,15 @@ button:hover {
   background-size: cover;
   background-position: center center;
 }
+.banner404 {
+  height: 90vh;
+  max-height: 700px;
+  background-image: url(../images/4041.jpg);
+  background-color: #21112e;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
 .bannercontrast {
   height: inherit;
   max-height: 700px;
