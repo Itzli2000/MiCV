@@ -8,10 +8,14 @@
 .secondary-text-color  { color: #757575; }
 .divider-color         { border-color: #BDBDBD; }
 /*General styles*/
+.bg-lightgray {
+  background-color: #f2f2f2;
+}
 body {
   font-family: 'Inder', sans-serif;
   overflow-x: hidden;
-
+  max-width: 1460px;
+  margin: 0 auto;
 }
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   font-family: 'Signika', sans-serif;
@@ -33,7 +37,7 @@ button:hover {
 .banner {
   height: 90vh;
   max-height: 700px;
-  background-image: url(../images/1.jpg);
+  background-image: url(../images/who.jpg);
   background-size: cover;
   background-position: center center;
 }
@@ -41,29 +45,17 @@ button:hover {
   height: inherit;
   max-height: 700px;
   width: 100%;
-  background-image: linear-gradient(120deg, rgba(253,251,251,0.5) 0%, rgba(235,237,238,0.5) 100%);
+  background-image: linear-gradient(120deg, rgba(17,17,17,0.5) 0%, rgba(119,119,119,0.5) 100%);
 }
-.avatar {
-  width: 150px;
-  height: 150px;
-  border-radius: 100%;
-  background-image: url(../images/avatar.jpg);
-  background-size: cover;
-  background-position: center center;
+#myName {
+  border-top: 2px solid #FFF;
+  border-bottom: 2px solid #FFF;
 }
 #avatar404 {
   width: 250px;
   height: 250px;
   border-radius: 100%;
   background-image: url(../images/404.jpg);
-  background-size: cover;
-  background-position: center center;
-}
-.avatarbig {
-  width: 200px;
-  height: 200px;
-  border-radius: 100%;
-  background-image: url(../images/avatar.jpg);
   background-size: cover;
   background-position: center center;
 }
@@ -76,6 +68,12 @@ button:hover {
   position: relative;
   margin: 0;
   padding: 0;
+}
+/*Sections styles*/
+.customContainer {
+  min-width: 280px;
+  width: 80%;
+  margin: 0 auto
 }
 .separator {
   width: 250px;
@@ -142,6 +140,9 @@ button:hover {
 }
 .navbar-dark .navbar-nav .nav-link {
   color: #FFFFFF;
+}
+#mainNav .navBlock a.active {
+  color: #2a8152;
 }
 /*Special styles for cards*/
 .card {
@@ -386,7 +387,7 @@ button.close {
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
   #mainNav {
-    height: 80px;
+    height: 10vh;
   }
   #mainNav p.h5 {
     font-size: 1.75rem;
@@ -400,10 +401,6 @@ button.close {
   .navbar-brand img {
     width: 45px;
     height: 45px;
-  }
-  #first .container {
-    max-width: 500px;
-    margin: auto 0;
   }
   .header img {
     top: -50%;
@@ -515,9 +512,6 @@ button.close {
 
 /*Extra large devices (large desktops, 1100px and up)*/
 @media (min-width: 1100px) {
-  #first .container {
-    max-width: 700px;
-  }
   /*Right work flow containers*/
   .work-text {
     width: 450px;
@@ -533,9 +527,6 @@ button.close {
 }
 
 @media (min-width: 1200px) {
-  #first .container {
-    max-width: 850px;
-  }
   .lead {
     padding: 0;
   }

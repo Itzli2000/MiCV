@@ -28,17 +28,16 @@
   <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 <body>
-  <div id="banner" class="banner">
-    <div class="bannercontrast text-center d-flex flex-column justify-content-around align-items-center">
-      <div id="mainAvatar" class="avatar"></div>
-      <h2 id="myName" class="display-1">Ariel Molina</h2>
+  <div id="banner" class="banner text-white">
+    <div class="bannercontrast text-center d-flex flex-column justify-content-center align-items-center">
+      <h2 id="myName" class="display-4 mb-3">&nbsp; Ariel Molina &nbsp;</h2>
       <p id="iAm" class="h1">Soy 
-        <span class="typer" id="main" data-words="polifacético,desarrollador,comprometido,mexicano,divertido" data-colors="#3F51B5" data-delay="100" data-deleteDelay="1000"></span>
+        <span class="typer" id="main" data-words="polifacético,desarrollador,comprometido,mexicano,divertido" data-colors="#2a8152" data-delay="100" data-deleteDelay="1000"></span>
         <span class="cursor" data-owner="main"></span>
       </p>
     </div>
   </div>
-  <nav id="mainNav" class="navbar sticky-top navbar-expand-md navbar-dark dark-primary-color text-primary-color">
+  <nav id="mainNav" class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
     <a class="navbar-brand d-flex justify-content-center align-items-center" href="#banner">
       <img src="favicon.ico" class="d-inline-block align-top" alt="">
       <p class="h5 text-primary-color">Ariel Molina</p>
@@ -47,10 +46,13 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse navBlock" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item text-center">
           <a class="nav-link h6" href="#first">¿Quien soy?</a>
+        </li>
+        <li class="nav-item text-center">
+          <a class="nav-link h6" href="#first">Habilidades</a>
         </li>
         <li class="nav-item text-center">
           <a class="nav-link h6" href="#second">Soluciones</a>
@@ -67,6 +69,20 @@
       </ul>
     </div>
   </nav>
+</div>
+
+<div class="row" id="values"></div>
+
+<div class="row text-dark bg-lightgray" id="first">
+  <div class="col-sm-12 col-md-4">
+    <img src="assets/images/who1.jpg" class="img-fluid" alt="Ariel Molina">
+  </div>
+  <div class="col-sm-12 col-md-8">
+    <div class="customContainer d-flex flex-column justify-content-center align-content-center h-100">
+      <h3 class="text-left font-weight-bold my-5">¿Quien soy?</h3>
+      <p class="text-justify">Soy Programador Web. Me especializo en el desarrollo de sitios web con  HTML5, CSS3, JAVASCRIPT Y JQUERY.<br><br>Me he dedicado a perfeccionar el proceso de maquetación web con estándares W3C, y compatibilidad multi-browser así como diseños responsivos, buscando la minimización del código utilizado.<br><br>Me apasiona la perfección visual de los sitios web con los que trabajo</p>
+    </div>
+  </div>
 </div>
 
 <footer id="">

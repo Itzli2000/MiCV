@@ -1,28 +1,13 @@
 $(document).ready(function() {
 
-  // Changes classes to banner
-  $(window).resize(function(){
-    if (screen.width>=320) {
-      $('#myName').removeClass('display-1').addClass('h1');
-      $('#iAm').removeClass('h1').addClass('h3');
-      $('#mainAvatar').removeClass('avatarbig').addClass('avatar');
-    }
-    if (screen.width>=768) {
-      $('#myName').removeClass('h1').addClass('display-1');
-      $('#iAm').removeClass('h3').addClass('h1');
-      $('#mainAvatar').removeClass('avatar').addClass('avatarbig');
-    }
-  });
-  if (screen.width>=320) {
-    $('#myName').removeClass('display-1').addClass('h1');
-    $('#iAm').removeClass('h1').addClass('h3');
-    $('#mainAvatar').removeClass('avatarbig').addClass('avatar');
-  }
-  if (screen.width>=768) {
-    $('#myName').removeClass('h1').addClass('display-1');
-    $('#iAm').removeClass('h3').addClass('h1');
-    $('#mainAvatar').removeClass('avatar').addClass('avatarbig');
-  }
+  // Active class for menu
+  (function($) {
+    $("#mainNav li a").on("click", function(e) {
+        e.preventDefault();
+        $("#mainNav li a").removeClass("active");
+        $(this).addClass("active");
+      });
+  })(jQuery);
 
   // Smooth scroll for menu anchors
   // Select all links with hashes
