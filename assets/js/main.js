@@ -48,4 +48,13 @@ $(document).ready(function() {
     $(".navbar-collapse").collapse('hide');
   });
 
+  // Animate progress bar
+  var $bars = $(".progress-bar");
+  $bars.eq(0).animate({width: "85%"}, 1500);
+  $bars.eq(1).animate({width: "80%"}, 1500);
+  $bars.eq(2).animate({width: "60%"}, 1500);
+  $bars.eq(3).animate({width: "50%"}, 1500);
+  $bars.eq(4).animate({width: "80%"}, 1500);
+  $bars.eq(5).animate({width: "50%"}, 1500);
+
 });
